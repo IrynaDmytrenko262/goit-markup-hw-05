@@ -561,11 +561,10 @@
 
   .footer-form{
     display: flex;
-    gap 24px;
+    gap: 24px;
   }
 
-  .label-foter-form{
-    
+  .label-foter-form{   
   }
 
   .subscribe-input{
@@ -711,11 +710,11 @@
       margin-bottom: 16px;
   }
 
-  .container-lable{
+  .container-label{
     margin-bottom: 8px;
   }
 
-  .lable{
+  .label{
       font-size: 12px;
       line-height: 1.17;
       letter-spacing: 0.04em;
@@ -751,10 +750,6 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .input-icon:focus{
-    fill: #4D5AE5;
-  }
-
   .container-comment{
     margin-bottom: 16px;
   }
@@ -779,7 +774,7 @@
     border-color: #4D5AE5;
   }
 
-  .container-check-n-lable{
+  .container-check-n-label{
     margin-bottom: 24px;    
   }
 
@@ -798,11 +793,9 @@
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     justify-content: center;
     fill: transparent;
