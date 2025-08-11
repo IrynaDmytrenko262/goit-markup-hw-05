@@ -375,37 +375,76 @@
 <!--modal-->
 <div class="backdrope is-open">
   <div class="container-modal">
+    
     <button type="button" class="modal-button-close">
       <svg class="modal-button-icon-close" width="8" height="8">
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
     </button>
     <p class="modal-text">Leave your contacts and we will call you back</p>
+    
     <form class="order-form">
-      <div class="container-name">
-        <label class="name-lable" for="user-name">
+      
+      <div class="container-lable">
+        <label class="lable" for="user-name">
           Name         
         </label>
-        <div class="container-input-person">
-          <input class="input-name" type="text" id="user-name" name="user-name" required />
-          <svg class="input-icon-person" width="18" height="24">
+        <div class="container-input">
+          <input class="input" type="text" id="user-name" name="user-name" required />
+          <svg class="input-icon" width="18" height="24">
             <use href="./images/icons.svg#icon-person"></use>
           </svg>
         </div>
       </div>
-      <label>
-        Phone
-        <input type="tel" name="contact_tel" required />
-      </label>
-      <label>
-        Email
-        <input type="email" name="email" />
-      </label>
-      <label>
-        Comment
-        <input type="text" name="comment" />
-      </label>
-      <button type="button" class="modal-button-send" disabled>Send</button>
+
+      <div class="container-lable">
+        <label class="lable" for="user-phone">
+          Phone         
+        </label>
+        <div class="container-input">
+          <input class="input" type="tel" id="phone" name="phone" required />
+          <svg class="input-icon" width="18" height="24">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="container-lable">
+        <label class="lable" for="user-email">
+          Email
+        </label>
+        <div class="container-input">
+          <input class="input" type="email" id="email" name="email" required />
+          <svg class="input-icon" width="18" height="24">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="container-comment">
+        <label class="label" for="user-comment">
+          Comment
+          <input type="text" name="comment" />
+        </label>
+        <textarea class="textarea" id="user-comment" name="user-comment" placeholder="Text input">
+        </textarea>
+      </div>
+
+      <div class="container-check-n-lable">
+        <input class="input-check" type="checkbox" id="user-privacy" name="user-privacy" value="true" required />
+        <label class="label-check"  for="user-privacy">
+          I accept the terms and conditions of the 
+          <span class="span-check">
+            <svg class="span-check-svg" width="10" height="8">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </span>
+          <a class="span-check-link" href="">Privacy Policy</a>
+        </label>
+      </div>
+
+      <button class="model-button-send" type="button" class="modal-button-send" disabled>Send</button>
+    
     </form>
 
   </div>
