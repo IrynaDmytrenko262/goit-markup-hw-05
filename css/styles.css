@@ -720,7 +720,6 @@
 
   .input:focus{
     border-color: #4D5AE5;
-    fill: #4D5AE5;
   }
 
   .input-icon{
@@ -730,9 +729,9 @@
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
-  /*.input-icon:focus{   
-  }*/
+  .input:focus + .input-icon {
+  fill: #4D5AE5;
+  }
 
   .container-label-comment{
     margin-bottom: 16px;
