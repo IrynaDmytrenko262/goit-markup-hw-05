@@ -774,44 +774,44 @@
     border-color: #4D5AE5;
   }
 
-  .container-check-n-label{
-    margin-bottom: 24px;    
-  }
+  /*!!!!*/
 
-  .input-check{
-    visually-hidden;
-  }
-  .label-check{
+  .label-mentor{
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;   
   }
 
-  .span-check{
-    width: 16px;
-    height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    display: inline-flex;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
-  }
-
-  .quiz-form input[type="checkbox"]:checked+label {
-      background-color: #404bbf;
-      border: none;
-      fill: #F4F4FD;
+    .custom-checkbox { 
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      border: 1px solid rgba(46, 47, 66, 0.4);
+      border-radius: 2px;
+      fill: transparent;
+  
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     }
 
-  .span-check-link{
-    color: #4d5ae5;
-  }
+ .privacy-link {
+   text-decoration: underline;
+   color: #4d5ae5;
+ }
 
-  .model-button-send{
+ .checkbox-mentor:checked + .label-mentor > .custom-checkbox{
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+ }
+
+
+
+  /*1111*/
+
+  .modal-button-send{
     display: block;
     min-width: 169px;
     height: 56px;
